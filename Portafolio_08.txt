@@ -1,0 +1,14 @@
+Notación infija a postfija: 
+
+A-B/(C*D$E)
+
+1- A-B/(C*DE$)
+2- A-B/(CDE$*)
+3- A-BCDE$*/
+4- AB-CDE$*/
+
+((A+B)*C-(D-E))$(F+G)
+
+1-((AB+)*C-(DE-))$(FG+)
+2-(AB+C*DE--)$(FG+)
+3- AB+C*DE--FG+$
