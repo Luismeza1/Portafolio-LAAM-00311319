@@ -73,16 +73,23 @@ void consultar(){
         cout << "\nTitulo de la actividad: " << actividadLista.titulo << endl;
         cout << "Hora de inicio: " << actividadLista.hora << endl;
         cout << "Duracion en minutos: " << actividadLista.duracion << endl;
-        //Sacarlo para que se pueda imprimir la siguiente actividad
-        a1.colaActividad.pop();
+        //Sacarlo para que se pueda imprimir la siguiente actividad  
+        a1.colaActividad.pop();      
     }
     cout << "Lista de actividades vacia\n";
 }
 
 void borrar(){
-
+    a1.colaActividad.back();
+    a1.colaActividad.pop();
+    cout << "Ultima actividad borrada"<< endl;
 }
 
 void borrarTodas(){
+    for(int i = 0; i < a1.cantidadRealizadas; i++){
+        a1.colaActividad.front();
+        a1.colaActividad.pop();
+    }
+    cout << "Todas las actividades borradas" << endl;
 
 }
